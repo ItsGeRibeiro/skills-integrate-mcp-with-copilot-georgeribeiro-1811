@@ -16,8 +16,9 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
-  padding: 20px 0;
+  padding: 48px 12px 20px;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
@@ -26,6 +27,36 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+.account-menu {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  text-align: right;
+  z-index: 1;
+}
+
+.account-menu summary {
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+#login-dialog {
+  margin: auto;
+  width: min(90%, 360px);
+  padding: 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+#login-dialog::backdrop {
+  background-color: rgb(0 0 0 / 45%);
+}
+
+#login-error {
+  color: #c62828;
+  margin-bottom: 8px;
 }
 
 main {
